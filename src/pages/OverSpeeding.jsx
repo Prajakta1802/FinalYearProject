@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Navbar, Footer, SecondaryButton, Loader } from "../components";
 import axios from "axios";
-import TestVideo from "E:/__Degree/8th sem/Final Year Project/Final_Year_BE_Project_Final/part1_project_module/files/videoTest.mp4";
+import TestVideo from "../assets/TestVideo.mp4";
 
 const OverSpeeding = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const [column, setColumn] = useState();
 
   const GetOverSpeedingData = async () => {
     try {
@@ -38,18 +37,6 @@ const OverSpeeding = () => {
     }
     return resultData;
   };
-
-  // const tdData = () => {
-  //   return TableData.map((data) => {
-  //     return (
-  //       <tr>
-  //         {column.map((v) => {
-  //           return <td>{data[v]}</td>;
-  //         })}
-  //       </tr>
-  //     );
-  //   });
-  // };
 
   const tdData = () => {
     return data.map((item) => {

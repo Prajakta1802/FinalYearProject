@@ -1,5 +1,5 @@
 .navbar {
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -7,7 +7,7 @@
   margin-bottom: 2rem;
 }
 .navbar img {
-  height: 80px;
+  height: 70px;
   mix-blend-mode: color-burn;
 }
 
@@ -140,6 +140,10 @@ hr {
   width: 100%;
 }
 
+.result__container img {
+  height: auto;
+  width: 100%;
+}
 .table {
   border-collapse: collapse;
   width: 100%;
@@ -157,4 +161,9 @@ th {
   text-align: center;
   background-color: blue;
   color: white;
+}
+
+.no-helmet-video {
+  margin-top: -3rem;
+  height: 450px;
 }
